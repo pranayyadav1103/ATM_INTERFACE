@@ -23,6 +23,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JPasswordField;
+import javax.swing.JScrollPane;
 
 public class Mini_Statement {
 
@@ -79,6 +80,9 @@ public class Mini_Statement {
 		t1 = new JTable();
 		t1.setBounds(211, 110, 350, 249);
 		frame.getContentPane().add(t1);
+		JScrollPane scrollPane = new JScrollPane(t1);
+        scrollPane.setBounds(211, 110, 350, 249); 
+        frame.getContentPane().add(scrollPane); 
 		
 		JLabel lblNewLabel = new JLabel("Enter the pin No :");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
